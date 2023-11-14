@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+  body{
+    background-image: url("https://wallpaperset.com/w/full/7/5/a/545589.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-control" id="dob" name="dob">
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+          <label class="form-check-label" for="male">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+          <label class="form-check-label" for="female">
+            Female
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email ID:</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" class="form-control" id="mobile" name="mobile">
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea class="form-control" id="address" name="address"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city" name="city">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="pincode">Pincode:</label>
+          <input type="text" class="form-control" id="pincode" name="pincode">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" id="state" name="state">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="country">Country:</label>
+          <input type="text" class="form-control" id="country" name="country">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Hobbies:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hobby1" name="hobby1" value="reading">
+          <label class="form-check-label" for="hobby1">
+            Reading
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hobby2" name="hobby2" value="sports">
+          <label class="form-check-label" for="hobby2">
+            Sports
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hobby3" name="hobby3" value="music">
+          <label class="form-check-label" for="hobby3">
+            Music
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and jQuery CDN (for form validation) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
